@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment project1</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins";
+        }
+        .card_1{
+            /* border: 1px solid black; */
+            width: 250px;
+            height: 500px;
+            border-radius: 5px;
+            box-shadow: 10px 10px 10px green;
+        }
+        header{
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 150px;
+            margin-top: 70px;
+        }
+        .img{
+          border-radius: 10px 10px;  
+        }
+        .info1 h3,p,button{
+            /* border-top: 1px solid black; */
+            margin: 10px;
+        }
+        .btn1{
+            margin-top:25px;
+        }
+        .info1 button{
+            background-color: #555555;
+            font-size:15px;
+            color: white;
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+        .info1 p{
+            font-size: small;
+        }
+        
+    </style>
+</head>
+<body style="background-color: gray;">
+    <header>
+    <h1>Learn JavaScript && (MERN Stack ) in తెలుగు</h1>
+    </header>
+    <div class="container">
+    <div style="background-color:white;" class="card_1">
+        <div class="img1">
+            <img src="./assets/c1.png" style="width: 250px;height:300px;">
+        </div>
+        <div class="info1">
+            <h3>Trainer</h3>
+            <p> Raghu is an instructor on the YouTube channel SVGIE, where he teaches JavaScript full-stack development.</p>
+            <button onclick="trainer()">Read more</button>
+        </div>
+    </div>
+    <div style="background-color:white;"  class="card_1">
+        <div class="img1">
+            <img src="./assets/c2.png" style="width: 250px;height:300px;">
+        </div>
+        <div class="info1">
+            <h3>YouTube channel</h3>
+            <p>That's fantastic news! SVGIE, with over 5000 subscribers, features multiple trainers.<a style="text-decoration: none;" href="https://www.youtube.com/@svgie2047">Link</a></p>
+            <button onclick="channel()" class="btn1">Read more</button>
+        </div>
+    </div>
+    <div style="background-color:white;"  class="card_1">
+        <div class="img1">
+            <img src="./assets/c3.png" style="width: 250px;height:300px;">
+        </div>
+        <div class="info1">
+            <h3>Course</h3>
+            <p>JavaScript full-stack course combines HTML, CSS, JavaScript, Node.js, databases, prepping students for web dev careers.</p>
+            <button onclick="course()">Read more</button>
+        </div>
+    </div>
+  </div>
+  
+  <script>
+    function trainer(){
+        document.body.style.backgroundColor = "orange";
+    }
+    function channel(){
+        document.body.style.backgroundColor = "#FFD700";
+    }
+    function course(){
+        document.body.style.backgroundColor = "#87CEFA";
+    }
+  </script>
+  
+
+
+</body>
+</html>
